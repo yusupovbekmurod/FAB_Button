@@ -1,0 +1,42 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(0, 0, 0);
+   /* background-image: url(../images/galaktika.jpg);
+   background-repeat: no-repeat; */
+
+}
+
+.galaktika {
+   display: flex;
+   justify-content: center;
+   margin-top: 100px;
+}
+
+.galaktika img {
+   width: 550px;
+   height: 500px;
+   border-radius: 50%;
+
+   
+   animation-name: galaktics;
+   animation-fill-mode: inherit;
+   animation-timing-function: linear;
+   animation-duration: 60s;
+   animation-iteration-count: infinite;
+
+}
+
+@keyframes galaktics {
+   100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+   }
+}

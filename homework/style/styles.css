@@ -1,0 +1,155 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: rgb(44, 44, 44);
+
+}
+
+.main {
+   margin-top: 500px;
+   margin-left: 500px;
+}
+
+.main__oval__deg {
+   width: 100px;
+   height: 100px;
+   background-color: rgb(255, 122, 0);
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+
+
+}
+
+.main__oval__deg:hover {
+   animation-name: plus_x;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+   animation-duration: .2s;
+
+
+}
+
+
+@keyframes plus_x {
+   100% {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+   }
+}
+
+
+.main__oval__pressed {
+   display: none;
+   
+}
+
+.main__oval:hover .main__oval__pressed {
+   display: block;
+
+
+
+}
+
+.main__oval__pressed img {
+   position: absolute;
+   padding: 24px;
+   background-color: #ffffff;
+   border-radius: 50%;
+   animation-delay:.3s;
+
+}
+
+
+
+.main__oval__pressed img:active {
+   animation-name: turn_around;
+   animation-duration: .3s;
+   animation-fill-mode: inherit;
+   animation-timing-function: linear;
+
+}
+
+@keyframes turn_around {
+   100% {
+      transform: rotate(360deg);
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+   }
+}
+
+
+.main__oval__pressed img:nth-child(1) {
+
+
+   top: 502px;
+   left: 505px;
+   z-index: -10;
+
+   animation-name: positionse;
+   animation-duration: 1s;
+   animation-fill-mode: inherit;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+
+}
+
+@keyframes positionse {
+   100% {
+      top: 370px;
+      left: 505px;
+   }
+
+
+}
+
+.main__oval__pressed img:nth-child(2) {
+   top: 502px;
+   left: 505px;
+   z-index: -10;
+
+   animation-name: positions;
+   animation-duration: 2s;
+   animation-fill-mode: inherit;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+
+}
+
+@keyframes positions {
+   100% {
+      top: 230px;
+      left: 505px;
+   }
+}
+
+.main__oval__pressed img:nth-child(3) {
+   top: 502px;
+   left: 505px;
+   z-index: -10;
+
+   animation-name: position;
+   animation-duration: 3s;
+   animation-fill-mode: inherit;
+   animation-timing-function: linear;
+   animation-fill-mode: forwards;
+
+}
+
+@keyframes position {
+   100% {
+      top: 100px;
+      left: 505px;
+   }
+}
